@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en" ng-app='zoneApp'>
+<head>
+	<meta charset="utf-8">
+	<title>Zone</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/grid.css" />
+	<link rel="stylesheet/less" type="text/css" href="assets/css/main.less" />
+	
+	<!-- JS LIBRARIES -->
+	<script src="assets/lib/jquery/jquery.min.js"></script>
+	<script src="assets/lib/angular/angular.min.js"></script>
+	<script src="assets/lib/angular/angular-route.min.js"></script>
+	<script src="assets/lib/moment/moment.js"></script>
+	<script src="assets/lib/less/less.js"></script>
+
+	<!--CONTROLLERS -->
+	<script src="components/home/homeController.js"></script>
+
+	<!--SERVICES-->
+
+
+	<!--DIRECTIVES-->
+	<script src="partials/header/headerDirective.js"></script>
+
+	<script src="app.js"></script>
+</head>
+<body>
+	<main-header></main-header>
+	<div ng-view></div>
+</body>
+</html>
