@@ -1,4 +1,4 @@
-@purple: #8c5485;
+@purple: rgba(140,84,133,.8);
 @mobile-width: 767px;
 @font-face {
     font-family: 'bebas';
@@ -35,13 +35,14 @@
 
 }
 .header {
+
 	width:100%;
 	padding-top: 5px;
-
-	background-color: @purple;
-	-webkit-box-shadow: 0px 3px 5px rgba(100, 100, 100, 0.49);
-	-moz-box-shadow:    0px 3px 5px rgba(100, 100, 100, 0.49);
-	box-shadow:         0px 3px 5px rgba(100, 100, 100, 0.49);
+	position: fixed;
+	top:0;
+	background-color: rgba(0,0,0,.5);
+	z-index: 1000;
+	
 
 	.nav-btn-col {
 		font-family: 'museosans100';
@@ -51,11 +52,36 @@
 		color: white;
 		padding-top: 18px
 	}
+	#bp-link {
+		color: white;
+		border: 1px solid white;
+		text-decoration: none;
+		padding: 10px;
+	}
 }
 #home-page {
-	margin-top: 40px;
+	background: url(/assets/img/landing_bg3.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	color:white;
+	
+	.landing-content {
+		padding-top: 80px;
+	}
 	.home-display-title {
 		font-size: 60px;
+		font-family: 'museosans100';
+		margin-bottom: 20px;
+	}
+	.home-display-title-2 {
+		font-size: 40px;
+		font-family: 'museosans100';
+		margin-bottom: 20px;
+	}
+	.home-display-body-2 {
+		font-size: 20px;
 		font-family: 'museosans100';
 		margin-bottom: 20px;
 	}
@@ -70,6 +96,22 @@
   			transform: translateY(-50%);
 		}
 		
+	}
+	.landing-about{
+		padding-top: 20px;
+		padding-bottom: 20px;
+		color: black;
+		margin-top: 40px;
+		width: 100%;
+		background-color: white;
+	}
+	.footer {
+		width: 100%;
+		padding: 20px 0 20px 0;
+		background-color: #282828;
+		color: white;
+		font-size: 18px;
+		font-family: 'museosans100';
 	}
 		
 }
